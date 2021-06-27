@@ -8,7 +8,7 @@ import Feed from './Feed';
 import { selectUser, logout, login } from './features/userSlice';
 import Login from './Login';
 import { auth } from './firebase';
-
+import Widgets from './Widgets';
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
@@ -37,6 +37,7 @@ function App() {
           <>
             <Sidebar />
             <Feed />
+            <Widgets/>
           </>
         )
         }
