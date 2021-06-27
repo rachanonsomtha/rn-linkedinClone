@@ -10,7 +10,7 @@ function Post({ name, description, message, photoUrl }) {
     return (
         <div className="post">
             <div className="post__header">
-                <Avatar />
+                <Avatar src={photoUrl}>{name[0]}</Avatar>
                 <div className="post__info">
                     <h2>{name}</h2>
                     <p>{description}</p>
@@ -21,10 +21,10 @@ function Post({ name, description, message, photoUrl }) {
             </div>
 
             <div className="post__buttons">
-                <InputOption Icon={ThumbUpAltOutlinedIcon} title="Like" color="grey"/>
-                <InputOption Icon={ChatOutlined} title="Comment" color="grey"/>
-                <InputOption Icon={ShareOutlined} title="Share" color="grey"/>
-                <InputOption Icon={SendOutlined} title="Send" color="grey"/>
+                <InputOption Icon={ThumbUpAltOutlinedIcon} title="Like" color="grey" />
+                <InputOption Icon={ChatOutlined} title="Comment" color="grey" />
+                <InputOption Icon={ShareOutlined} title="Share" color="grey" />
+                <InputOption Icon={SendOutlined} title="Send" color="grey" />
             </div>
         </div>
     )
